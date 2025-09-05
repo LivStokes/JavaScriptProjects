@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    align-items: center;
+    height: 100%vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+}
+
+.scroller {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(10, 10, 10);
+}
+
+/* .scrollerholder {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(10, 10, 10);
+} */
+
+.scroller p{
+    color: red; 
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    text-align: center;
+}
+
+.scrollerbox {
+    width: 500px;
+    height: 500px;
+    overflow: hidden; /* clips image inside the box */
+    border: 2px solid #333;
+    background-color: black;
+}
+
+.scrollerimg {
+    width: 100%;
+    height: 1000px; /* maintain aspect ratio */
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+
+/* Optional: scroll down on hover using mouse wheel */
+.scrollerbox:hover {
+    cursor: grabbing;
+}
